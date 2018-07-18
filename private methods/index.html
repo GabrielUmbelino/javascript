@@ -1,0 +1,43 @@
+
+<html>
+    <body>
+        <div>
+            <p>
+                <label>name</label>
+                <input name="name" type="text"/>
+            </p>
+            <p>
+                <button onclick="save()">save</button>
+            </p>
+            <b class="user">
+
+            </b>
+        </div>
+    </body>
+
+</html>    
+
+<script>
+    function App() {
+        var user = {};
+        var getUserPrivate = function() {
+            return user;
+        };
+        var setUserPrivate = function(u) {
+            user = u;
+        };
+        this.getUser = function() {
+            return getUserPrivate();
+        };
+        this.setUser = function(u) {
+            return setUserPrivate(u);
+        }
+    };
+    var myApp = new App();
+    var save = function() {
+        var name = document.querySelector("input[name='name']").value;
+        myApp.setUser({ "name": name });
+        var user = myApp.getUser();
+        document.querySelector(".user").innerText = user.name;
+    }
+</script>
