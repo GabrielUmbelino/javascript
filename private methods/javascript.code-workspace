@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "/Users/gabriel/git/javascript"
+		},
+		{
+			"path": "/Users/gabriel/git/reports-transcription"
+		},
+		{
+			"path": "/Users/gabriel/git/survey"
+		},
+		{
+			"path": "/Users/gabriel/git/hilab-reports-2.0"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

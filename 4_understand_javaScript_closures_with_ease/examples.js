@@ -102,6 +102,6 @@ var actionCelebs = [{name:"Stallone", id:0}, {name:"Cruise", id:0}, {name:"Willi
 var createIdForActionCelebs = celebrityIDCreator (actionCelebs);
 
 var stalloneID = createIdForActionCelebs [0];
- console.log(stalloneID.id); // 100
+console.log(stalloneID.id); // 100
 
 var cruiseID = createIdForActionCelebs [1]; console.log(cruiseID.id); // 101
